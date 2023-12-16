@@ -1,0 +1,53 @@
+Contents:
+Promise
+ - What is a promise?
+ - Promise States
+ - Promise chain
+ - promise.all()
+ - Use of fetch() & then()
+
+ Callbackhell:- 
+   function a1(){
+    function a2(){
+        function a3(){
+            console.log("Hi hello")
+        }
+    }
+   }
+
+   Promise:- 
+   => It holds the result of async operation.
+   => To overcome the problem of Callbackhell scenario promise is used.
+   => It is an object, which holds the result of async operation.
+   Syntax:- let/const variablename = new Promise((resolve,reject)=>{})
+   Promise States:- 
+   for every promise objects we have 3 states,
+   1.pending
+   2.Fullfilled / resolved
+   3.rejected
+
+   .then and catch
+   => To handle the promise object we are going to use then and catch
+
+   //session task voting
+   18 or above => eligible to vote
+   17 or below = > not eligible to vote
+
+   //promise chain
+   => chaining of promise
+   => Dependent operation
+   => first promise output will be the input of second promise.
+
+   //promise.all()
+   => It is used when we have multiple promises
+   => It will wait for all the promises to get resolved.
+   => It returns an array of values.
+   //Drawbacks
+   => if one promise gets rejected it wont go for other.
+   => it will display the information of the rejected promise.
+   
+   //promise.allsettled
+   => when you want know the state of each promise.
+   => output will be a promise object.
+   => It will be more usefull when you dont have dependent operation.
+   -----------------------------
